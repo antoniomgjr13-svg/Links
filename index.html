@@ -231,7 +231,7 @@ async function savePdf(){
   try { if (typeof claude !== "undefined") d = await claude.use("downloads"); } catch(e) {}
   if (d) { try { await d.save({filename:name, data:blob}); } catch(e) {} return; }
   const a = document.createElement("a");
-a.href = "Curriculo_Antonio_Magnago_Junior.pdf"; a.download = name; a.target = "_blank";
+a.href = "Curriculo_Antonio_Magnago_Junior.pdf(2)"; a.download = name; a.target = "_blank";
   document.body.appendChild(a); a.click(); a.remove();
 }
 const dlg = document.getElementById("dlg");
